@@ -165,6 +165,7 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+vim.o.background = 'dark'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -911,6 +912,7 @@ require('lazy').setup({
 
       require('solarized').setup {
         theme = 'neo',
+        pallete = 'selenized',
         styles = {
           comments = { italic = false },
         },
@@ -965,7 +967,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'java' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
