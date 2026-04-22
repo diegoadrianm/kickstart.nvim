@@ -47,4 +47,11 @@ return {
     config = true,
     auto = true,
   },
+
+  {
+    'aserowy/tmux.nvim',
+    config = function()
+      require('tmux').setup()
+    end,
+  },
 }
