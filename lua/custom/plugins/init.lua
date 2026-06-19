@@ -54,4 +54,12 @@ return {
       require('tmux').setup()
     end,
   },
+  {
+    'GustavEikaas/easy-dotnet.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim' },
+    ft = { 'cs', 'fsharp', 'razor' },
+    config = function()
+      require('easy-dotnet').setup()
+    end,
+  },
 }
